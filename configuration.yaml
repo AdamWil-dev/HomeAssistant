@@ -1,0 +1,104 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+homeassistant:
+  customize: !include customize.yaml
+  packages: !include_dir_named packages
+  # Installation name
+  name: Husha
+  # Location
+  latitude: !secret loc_latitude
+  longitude: !secret loc_longitude
+  # Sea level
+  elevation: 200
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Timezone
+  time_zone: Europe/Warsaw
+  # Url setup
+  external_url: !secret external_url
+  internal_url: !secret internal_url
+
+http:
+  ssl_certificate: !secret ssl_cert
+  ssl_key: !secret ssl_key
+
+mysensors:
+  gateways:
+    - device: '/dev/ttyUSB0'
+      persistence_file: 'path/mysensorslight.json'
+      baud_rate: 115200
+    - device: '/dev/ttyUSB1'
+      persistence_file: 'path/mysensorsRS4852.json'
+      baud_rate: 115200
+  version: '2.3'
+
+mqtt:
+  broker: !secret mqtt_broker_ip
+
+hacs:
+  token: !secret hacs_auth_github
+
+# Wake on lan component call before lgtv
+wake_on_lan:
+
+webostv:
+    host: !secret lg_ip
+    name: LG WebOS
+    turn_on_action:
+      service: wake_on_lan.send_magic_packet
+      data:
+       mac: !secret lg_mac
+    customize:
+      sources:
+        - LiveTV
+        - SmartShare
+        - PS4
+        - Netflix
+
+# Lovelance config
+lovelace:
+  mode: yaml
+
+  resources:
+  - url: /hacsfiles/weather-card/weather-card.js
+    type: module
+  - url: /hacsfiles/LG-WebOS-Remote-Control/lg-remote-control.js
+    type: module
+  - url: /hacsfiles/simple-thermostat/simple-thermostat.js
+    type: module
+  - url: /hacsfiles/lovelace-swipe-navigation/swipe-navigation.js
+    type: module
+  - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+    type: module
+
+  dashboards:
+    lovelace-mobile: # Needs to contain a hyphen (-)
+      mode: yaml
+      filename: /config/love_dashboards/mobile.yaml
+      title: Mobile
+      icon: mdi:cellphone
+      show_in_sidebar: true
+      require_admin: true
+    lovelace-test:
+      mode: yaml
+      title: test
+      show_in_sidebar: false
+      filename: /config/love_dashboards/test.yaml
+
+# Loggs
+logger:
+  default: info
+  logs:
+    custom_components.hacs: debug
+    hacs: debug

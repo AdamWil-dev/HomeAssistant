@@ -1,0 +1,27 @@
+docker exec -it home-assistant hass -c /config --script check_config
+
+sudo docker pull homeassistant/raspberrypi3-homeassistant:stable
+# force restart po update
+docker-compose up --force-recreate
+
+fe6c0ed99b4b30f30a302398483ff3cc7d913229
+
+#odnowa certyfikatu ssl 
+./certbot-auto renew --quiet --no-self-upgrade --standalone \
+                     --standalone-supported-challenges http-01
+
+
+
+  dashboards:
+    lovelace-mobile: # Needs to contain a hyphen (-)
+      mode: yaml
+      filename: /config/dashboards/mobile.yaml
+      title: Generated
+      icon: mdi:tools
+      show_in_sidebar: true
+      require_admin: true
+    lovelace-test:
+      mode: yaml
+      title: test
+      show_in_sidebar: false
+      filename: /config/dashboards/test.yaml

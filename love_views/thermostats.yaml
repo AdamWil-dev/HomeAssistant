@@ -1,0 +1,45 @@
+title: Thermostats
+path: thermostats
+icon: 'mdi:coolant-temperature'
+badges: []
+cards:
+  # Fun card
+  - type: custom:simple-thermostat
+    entity: climate.termostat_piwnica_5_12
+    name: Wiatrak
+    icon: mdi:air-conditioner
+    step_layout: row
+    label:
+      temperature: Wilgotność
+    control:
+      hvac:
+        cool:
+          icon: mdi:timer-outline
+          name: Timer 2
+        heat:
+          icon: mdi:timer-sand
+          name: Timer 1
+    unit: '%'
+  # Boiler card
+  - type: custom:simple-thermostat
+    entity: climate.termostat_piwnica_5_11
+    name: Boiler
+    icon: mdi:water-boiler
+    step_layout: row
+    label:
+      temperature: Temperatura
+    control:
+      hvac:
+        cool: false
+  # Room temperature card
+  - type: custom:simple-thermostat
+    entity: climate.master_termostat_35_13
+    name: Pokój
+    icon: mdi:home
+    step_layout: row
+    label:
+      temperature: Temperatura
+    control:
+      hvac:
+        cool: false
+

@@ -1,0 +1,85 @@
+switch.relay_0_1:
+    friendly_name: Lóżko 1
+switch.relay_0_2:
+    friendly_name: Biurko 2
+switch.relay_0_3:
+    friendly_name: Lóżko 2
+switch.relay_0_4:
+    friendly_name: Biurko 1
+    
+switch.relay_0_5:
+    friendly_name: Sufit
+switch.relay_0_6:
+    friendly_name: Okno
+    
+climate.termostat_piwnica_5_11:
+    friendly_name: Boiler
+    min_temp: 15
+    max_temp: 60
+    
+climate.termostat_piwnica_5_12:
+    friendly_name: Wiatrak
+    min_temp: 20
+    max_temp: 90
+    unit_of_measurement: "%"
+    
+switch.termostat_piwnica_5_21:
+    friendly_name: Boiler
+    hidden: true
+
+switch.termostat_piwnica_5_22:
+    friendly_name: Wiatrak
+    hidden: true
+    
+    
+    
+climate.master_termostat_35_13:
+    friendly_name: Pokój
+    
+sensor.master_termostat_35_1:
+    friendly_name: Dojście Piec
+
+sensor.master_termostat_35_2:
+    friendly_name: Roz. Ciepły
+
+sensor.master_termostat_35_3:
+    friendly_name: Roz. Zimny
+
+sensor.master_termostat_35_4:
+    friendly_name: Podłoga
+
+sensor.master_termostat_35_5:
+    friendly_name: Pokój
+
+sensor.master_termostat_35_7:
+    friendly_name: Pokój DHT
+
+sensor.master_termostat_35_8:
+    friendly_name: Pokój
+    
+
+automation.Auto_wiatrak:
+    icon: mdi:car-sports
+    
+binary_sensor.master_termostat_35_33:
+    friendly_name: Drzwi
+    
+switch.master_termostat_35_23:
+    friendly_name: Wiatrak
+    hidden: true
+    
+binary_sensor.brama_100_1:
+    friendly_name: Brama
+    icon: mdi:gate
+
+switch.brama_100_1:
+    friendly_name:: Brama
+    templates:
+      icon: >
+        if (state === 'off') return 'mdi:boom-gate-down';
+        if (state === 'on') return 'mdi:boom-gate-up';
+      icon_color: >
+        if (state === 'off') return 'red';
+        if (state === 'on') return 'blue';
+#    icon: mdi:boom-gate
+ 

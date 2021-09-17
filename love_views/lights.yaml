@@ -1,0 +1,27 @@
+title: Lights
+path: lights
+icon: 'mdi:lightbulb'
+badges: []
+cards:
+  - type: button
+    tap_action:
+      action: toggle
+    entity: light.led_sufit
+  - type: entities
+    entities:
+      - entity: switch.relay_0_1
+        icon: 'mdi:lightbulb'
+      - entity: switch.relay_0_3
+        icon: 'mdi:lightbulb-multiple'
+      - entity: switch.relay_0_4
+        icon: 'mdi:lightbulb'
+      - entity: switch.relay_0_2
+        icon: 'mdi:lightbulb-multiple'
+    title: Sypialnia
+  - type: entities
+    entities:
+      - entity: switch.relay_0_5
+        icon: 'mdi:ceiling-light'
+      - entity: switch.relay_0_6
+        icon: 'mdi:floor-lamp'
+    title: Salon

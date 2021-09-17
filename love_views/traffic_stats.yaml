@@ -1,0 +1,13 @@
+title: Traffic
+path: traffic
+icon: 'mdi:server'
+badges: []
+cards:
+  - type: custom:mini-graph-card
+    name: SERVER
+    icon: mdi:server
+    entities:
+      - entity:  sensor.archer_c1200_kib_s_received
+        name: received
+#     - sensor.archer_c1200_packets_s_received
+      - sensor.archer_c1200_kib_s_sent

@@ -1,0 +1,48 @@
+title: Husha
+views:
+  - path: default_view
+    title: Home
+    badges:
+      - entity: binary_sensor.updater
+      - entity: binary_sensor.master_termostat_35_33
+      - entity: binary_sensor.brama_100_1
+      - entity: person.admin
+      - entity: person.adam
+      - entity: person.natalia
+    cards:
+      - type: media-control
+        entity: media_player.biuro
+      - type: thermostat
+        entity: climate.termostat_piwnica_5_11
+      - type: thermostat
+        entity: climate.master_termostat_35_13
+      - type: thermostat
+        entity: climate.termostat_piwnica_5_12
+      - type: entities
+        entities:
+          - light.led_sufit
+        title: Światło
+      - type: media-control
+        entity: media_player.lg_tv
+      - type: entities
+        entities:
+          - switch.relay_0_4
+          - switch.relay_0_2
+          - switch.termostat_piwnica_5_21
+          - switch.brama_100_1
+          - switch.relay_0_1
+          - switch.relay_0_3
+          - switch.relay_0_6
+          - switch.relay_0_5
+          - switch.master_termostat_35_23
+          - switch.termostat_piwnica_5_22
+        title: Przełącznik
+      - type: weather-forecast
+        entity: weather.husha
+        show_forecast: false
+      - type: 'custom:lg-remote-control'
+        entity: media_player.lg_webos
+      - type: custom:weather-card
+        entity: weather.yourweatherentity
+        name: Optional name
+

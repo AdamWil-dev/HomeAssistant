@@ -1,0 +1,51 @@
+light:
+  - platform: mqtt
+    schema: json
+    name: "Led Sufit"
+    state_topic: "home/LED"
+    command_topic: "home/LED/set"
+    effect: true
+    effect_list:
+      - bpm
+      - candy cane  
+      - confetti  
+      - cyclon rainbow  
+      - dots  
+      - fire
+      - glitter  
+      - lightning
+      - noise  
+      - police all  
+      - police one  
+      - rainbow  
+      - rainbow with glitter  
+      - ripple  
+      - sinelon  
+      - solid  
+      - twinkle  
+    brightness: true
+#    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
+
+#input_number:
+#  animation_speed:
+#    name: Animation Speed
+#    initial: 150
+#    min: 1
+#    max: 150
+#    step: 1
+
+#automation: 
+#  - alias: "Led Sufit"
+#    initial_state: True
+#    hide_entity: False
+#    trigger:
+#      - platform: state
+#        entity_id: input_number.animation_speed
+#    action:
+#      - service: mqtt.publish
+#        data_template:
+#          topic: "home/LED/set"
+#          payload: '{"transition":{{ trigger.to_state.state | int }}}'

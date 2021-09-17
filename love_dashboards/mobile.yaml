@@ -1,0 +1,10 @@
+title: Mobile
+views:
+  - !include '/config/love_views/lights.yaml'
+  - !include '/config/love_views/lg_remote.yaml'
+  - !include '/config/love_views/thermostats.yaml'
+  - !include '/config/love_views/traffic_stats.yaml'
+swipe_nav:
+  wrap: true
+  animate: swipe
+

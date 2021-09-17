@@ -1,0 +1,12 @@
+
+title: LG_Remote
+path: lg_remote
+icon: 'mdi:remote-tv'
+badges: []
+cards:
+  - type: 'custom:lg-remote-control'
+    entity: media_player.lg_webos
+    colors:
+      buttons: var(--deactive-background-button-color)
+      texts: pink
+      background: rgba(95,155,234)
