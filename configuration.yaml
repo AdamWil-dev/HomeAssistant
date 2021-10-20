@@ -36,18 +36,18 @@ http:
 mysensors:
   gateways:
     - device: '/dev/ttyUSB0'
-      persistence_file: 'path/mysensorslight.json'
+      persistence_file: '/config/path/mysL.json'
       baud_rate: 115200
     - device: '/dev/ttyUSB1'
-      persistence_file: 'path/mysensorsRS4852.json'
+      persistence_file: '/config/path/myR.json'
       baud_rate: 115200
-  version: '2.3'
+  version: '2.3.2'
 
 mqtt:
   broker: !secret mqtt_broker_ip
 
-hacs:
-  token: !secret hacs_auth_github
+#hacs:
+#  token: !secret hacs_auth_github
 
 # Wake on lan component call before lgtv
 wake_on_lan:
@@ -102,3 +102,4 @@ logger:
   logs:
     custom_components.hacs: debug
     hacs: debug
+    mysensors: debug

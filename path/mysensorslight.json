@@ -39,7 +39,7 @@
                 "type": 3,
                 "description": "",
                 "values": {
-                    "2": "1"
+                    "2": "0"
                 }
             },
             "6": {
@@ -47,7 +47,7 @@
                 "type": 3,
                 "description": "",
                 "values": {
-                    "2": "0"
+                    "2": "1"
                 }
             },
             "25": {
@@ -57,7 +57,7 @@
                 "values": {}
             }
         },
-        "type": 17,
+        "type": 18,
         "sketch_name": "Relay",
         "sketch_version": "1.0",
         "battery_level": 0,
@@ -72,8 +72,8 @@
                 "type": 0,
                 "description": "",
                 "values": {
-                    "15": "0",
-                    "16": "0"
+                    "15": "1",
+                    "16": "1"
                 }
             }
         },
@@ -92,7 +92,7 @@
                 "type": 6,
                 "description": "DOJSCE PIEC",
                 "values": {
-                    "0": "20.5"
+                    "0": "26.8"
                 }
             },
             "2": {
@@ -100,7 +100,7 @@
                 "type": 6,
                 "description": "ROZ CIEPLY",
                 "values": {
-                    "0": "21.3"
+                    "0": "29.0"
                 }
             },
             "3": {
@@ -108,7 +108,7 @@
                 "type": 6,
                 "description": "ROZ ZIMNY",
                 "values": {
-                    "0": "20.5"
+                    "0": "28.8"
                 }
             },
             "4": {
@@ -116,14 +116,16 @@
                 "type": 6,
                 "description": "TEMP PODLOGA",
                 "values": {
-                    "0": "20.3"
+                    "0": "28.0"
                 }
             },
             "5": {
                 "id": 5,
                 "type": 6,
                 "description": "TEMP POKOJU",
-                "values": {}
+                "values": {
+                    "0": "-127.0"
+                }
             },
             "6": {
                 "id": 6,
@@ -164,7 +166,9 @@
                 "type": 29,
                 "description": "TERMOSTAT POKOJ",
                 "values": {
-                    "21": "Off"
+                    "21": "HeatOn",
+                    "0": "-127.0",
+                    "45": "23.0"
                 }
             },
             "23": {
@@ -199,7 +203,7 @@
                 "type": 6,
                 "description": "TEMP WIATRAK",
                 "values": {
-                    "0": "20.0"
+                    "0": "21.0"
                 }
             },
             "11": {
@@ -207,7 +211,7 @@
                 "type": 29,
                 "description": "BOILER",
                 "values": {
-                    "0": "38.0"
+                    "0": "39.5"
                 }
             },
             "12": {
@@ -215,7 +219,7 @@
                 "type": 29,
                 "description": "WIATRAK",
                 "values": {
-                    "0": "86.0"
+                    "0": "92.0"
                 }
             },
             "22": {
@@ -228,19 +232,25 @@
                 "id": 25,
                 "type": 4,
                 "description": "CZAS COLD",
-                "values": {}
+                "values": {
+                    "2": "1"
+                }
             },
             "26": {
                 "id": 26,
                 "type": 4,
                 "description": "CZAS HOT",
-                "values": {}
+                "values": {
+                    "2": "0"
+                }
             },
             "21": {
                 "id": 21,
                 "type": 3,
                 "description": "STAN BOILER",
-                "values": {}
+                "values": {
+                    "2": "0"
+                }
             }
         },
         "type": 17,

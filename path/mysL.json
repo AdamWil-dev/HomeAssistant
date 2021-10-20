@@ -9,75 +9,6 @@
         "protocol_version": "2.3.1",
         "heartbeat": 0
     },
-    "5": {
-        "sensor_id": 5,
-        "children": {
-            "11": {
-                "id": 11,
-                "type": 29,
-                "description": "BOILER",
-                "values": {
-                    "0": "57.0"
-                }
-            },
-            "12": {
-                "id": 12,
-                "type": 29,
-                "description": "WIATRAK",
-                "values": {
-                    "0": "89.0",
-                    "21": "AutoChangeOver",
-                    "45": "54.0"
-                }
-            },
-            "21": {
-                "id": 21,
-                "type": 3,
-                "description": "STAN BOILER",
-                "values": {
-                    "2": "0"
-                }
-            },
-            "22": {
-                "id": 22,
-                "type": 3,
-                "description": "STAN WIATRAK",
-                "values": {
-                    "2": "1"
-                }
-            },
-            "25": {
-                "id": 25,
-                "type": 4,
-                "description": "CZAS COLD",
-                "values": {
-                    "2": "0"
-                }
-            },
-            "26": {
-                "id": 26,
-                "type": 4,
-                "description": "CZAS HOT",
-                "values": {
-                    "2": "0"
-                }
-            },
-            "1": {
-                "id": 1,
-                "type": 6,
-                "description": "TEMP WIATRAK",
-                "values": {
-                    "0": "19.0"
-                }
-            }
-        },
-        "type": 17,
-        "sketch_name": "Termostat Piwnica",
-        "sketch_version": "7.0",
-        "battery_level": 0,
-        "protocol_version": "2.3.0",
-        "heartbeat": 0
-    },
     "100": {
         "sensor_id": 100,
         "children": {
@@ -85,10 +16,7 @@
                 "id": 1,
                 "type": 0,
                 "description": "",
-                "values": {
-                    "15": "0",
-                    "16": "0"
-                }
+                "values": {}
             }
         },
         "type": 17,
@@ -106,7 +34,7 @@
                 "type": 6,
                 "description": "DOJSCE PIEC",
                 "values": {
-                    "0": "24.3"
+                    "0": "26.8"
                 }
             },
             "2": {
@@ -114,7 +42,7 @@
                 "type": 6,
                 "description": "ROZ CIEPLY",
                 "values": {
-                    "0": "23.3"
+                    "0": "29.0"
                 }
             },
             "3": {
@@ -122,7 +50,7 @@
                 "type": 6,
                 "description": "ROZ ZIMNY",
                 "values": {
-                    "0": "22.3"
+                    "0": "28.8"
                 }
             },
             "4": {
@@ -130,7 +58,7 @@
                 "type": 6,
                 "description": "TEMP PODLOGA",
                 "values": {
-                    "0": "22.0"
+                    "0": "28.0"
                 }
             },
             "5": {
@@ -197,14 +125,69 @@
                 "id": 33,
                 "type": 0,
                 "description": "KONTAKTRON DRZWI",
-                "values": {
-                    "16": "0"
-                }
+                "values": {}
             }
         },
         "type": 17,
         "sketch_name": "Master Termostat",
         "sketch_version": "5.9",
+        "battery_level": 0,
+        "protocol_version": "2.3.0",
+        "heartbeat": 0
+    },
+    "5": {
+        "sensor_id": 5,
+        "children": {
+            "1": {
+                "id": 1,
+                "type": 6,
+                "description": "TEMP WIATRAK",
+                "values": {
+                    "0": "21.0"
+                }
+            },
+            "11": {
+                "id": 11,
+                "type": 29,
+                "description": "BOILER",
+                "values": {}
+            },
+            "12": {
+                "id": 12,
+                "type": 29,
+                "description": "WIATRAK",
+                "values": {
+                    "0": "90.0"
+                }
+            },
+            "21": {
+                "id": 21,
+                "type": 3,
+                "description": "STAN BOILER",
+                "values": {}
+            },
+            "22": {
+                "id": 22,
+                "type": 3,
+                "description": "STAN WIATRAK",
+                "values": {}
+            },
+            "25": {
+                "id": 25,
+                "type": 4,
+                "description": "CZAS COLD",
+                "values": {}
+            },
+            "26": {
+                "id": 26,
+                "type": 4,
+                "description": "CZAS HOT",
+                "values": {}
+            }
+        },
+        "type": 17,
+        "sketch_name": "Termostat Piwnica",
+        "sketch_version": "7.0",
         "battery_level": 0,
         "protocol_version": "2.3.0",
         "heartbeat": 0
