@@ -41,7 +41,7 @@ mysensors:
     - device: '/dev/ttyUSB1'
       persistence_file: '/config/path/myR.json'
       baud_rate: 115200
-  version: '2.3.2'
+  version: '2.3'
 
 mqtt:
   broker: !secret mqtt_broker_ip
