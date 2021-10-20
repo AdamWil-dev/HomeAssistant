@@ -50,7 +50,7 @@
                 "type": 6,
                 "description": "ROZ ZIMNY",
                 "values": {
-                    "0": "28.8"
+                    "0": "28.5"
                 }
             },
             "4": {
@@ -143,46 +143,61 @@
                 "type": 6,
                 "description": "TEMP WIATRAK",
                 "values": {
-                    "0": "21.0"
+                    "0": "22.0"
                 }
             },
             "11": {
                 "id": 11,
                 "type": 29,
                 "description": "BOILER",
-                "values": {}
+                "values": {
+                    "0": "39.0",
+                    "21": "AutoChangeOver",
+                    "45": "31",
+                    "44": "51"
+                }
             },
             "12": {
                 "id": 12,
                 "type": 29,
                 "description": "WIATRAK",
                 "values": {
-                    "0": "90.0"
+                    "0": "90.0",
+                    "21": "AutoChangeOver",
+                    "45": "54.0"
                 }
             },
             "21": {
                 "id": 21,
                 "type": 3,
                 "description": "STAN BOILER",
-                "values": {}
+                "values": {
+                    "2": "0"
+                }
             },
             "22": {
                 "id": 22,
                 "type": 3,
                 "description": "STAN WIATRAK",
-                "values": {}
+                "values": {
+                    "2": "1"
+                }
             },
             "25": {
                 "id": 25,
                 "type": 4,
                 "description": "CZAS COLD",
-                "values": {}
+                "values": {
+                    "2": "0"
+                }
             },
             "26": {
                 "id": 26,
                 "type": 4,
                 "description": "CZAS HOT",
-                "values": {}
+                "values": {
+                    "2": "0"
+                }
             }
         },
         "type": 17,
